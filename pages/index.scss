@@ -42,6 +42,14 @@
   color: #888;
 }
 
+.logo__skeleton-base {
+  stroke: black;
+}
+
+.logo__skeleton--filled-circle-mouth {
+  fill: #c0c0c0;
+}
+
 .logo__skeleton {
   animation: move 2s alternate infinite;
 
@@ -139,5 +147,33 @@
 
   100% {
     transform: translate(0.55px, -1px);
+  }
+}
+
+.homepage__theme-toggle {
+  position: absolute;
+  top: $global-spacing * 3;
+  right: $global-spacing * 3;
+}
+
+.dark-theme {
+  .logo {
+    color: $ghost-white;
+  }
+
+  .logo__skeleton-base {
+    stroke: $spun-pearl;
+  }
+
+  .logo__skeleton--filled-circle-mouth {
+    fill: darken($spun-pearl, 25%);
+  }
+
+  .logo__skeleton-group {
+    stroke: $spun-pearl;
+  }
+
+  .logo__skeleton {
+    stroke: $ghost-white;
   }
 }
