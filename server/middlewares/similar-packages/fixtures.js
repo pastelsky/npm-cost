@@ -91,6 +91,16 @@ const categories = {
     ],
     similar: ['chrono-node', 'its-a-date', 'parse-messy-time'],
   },
+  'class-names-manipulation': {
+    name: 'Class names manipulation',
+    tags: [
+      { tag: 'class', weight: Weight.LOW },
+      { tag: 'classname', weight: Weight.HIGH },
+      { tag: 'class-names', weight: Weight.HIGH },
+      { tag: 'class-list', weight: Weight.MID },
+    ],
+    similar: ['classnames', 'merge-class-names']
+  },
   'deep-equality': {
     name: 'Deep Equality Check',
     tags: [
@@ -471,6 +481,33 @@ const categories = {
       'formsy-react',
       'react-hook-form',
     ],
+  },
+  'react-calendar': {
+    name: 'React based calendars',
+    tags: [
+      { tag: 'react', weight: Weight.NORMAL },
+      { tag: 'date', weight: Weight.NORMAL },
+      { tag: 'calendar', weight: Weight.HIGH },
+    ],
+    similar: ['react-calendar', 'rc-calendar', 'simple-react-calendar']
+  },
+  'react-date-picker': {
+    name: 'React based date pickers',
+    tags: [
+      { tag: 'react', weight: Weight.NORMAL },
+      { tag: 'date', weight: Weight.NORMAL },
+      { tag: 'picker', weight: Weight.NORMAL },
+      { tag: 'date-picker', weight: Weight.HIGH }
+    ],
+    similar: ['react-date-picker', 'react-datepicker', 'react-dates']
+  },
+  'react-pdf': {
+    name: 'React based PDF utilies',
+    tags: [
+      { tag: 'react', weight: Weight.NORMAL },
+      { tag: 'pdf', weight: Weight.NORMAL },
+    ],
+    similar: ['react-pdf', 'react-pdf-js']
   },
   'schema-validation': {
     name: 'JSON schema validation',
